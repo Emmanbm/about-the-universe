@@ -1,0 +1,258 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  font-size: medium;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+}
+body a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  border-bottom: 1px solid white;
+}
+header #pages a.active {
+  color: white;
+}
+header #logo {
+  margin-left: 20px;
+}
+header #pages {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header #pages a {
+  margin-left: 20px;
+  color: #005288;
+}
+header #pages :hover {
+  color: white;
+}
+
+#content {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+}
+#content #data {
+  border-right: 1px solid white;
+}
+#content #data a {
+  color: white;
+}
+#content #data .data {
+  margin-top: 30px;
+  text-align: center;
+}
+#content #data .data :hover {
+  color: #0099ff;
+}
+#content #data .data :hover img {
+  width: 70px;
+}
+#content #data #active {
+  background: #00ff99;
+}
+#content #main-content .title {
+  color: rgb(0, 153, 255);
+}
+#content #main-content #about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 82, 136, 0.6)), url(../assets/space_ship.jpg);
+  padding: 5px 10px;
+  height: 200px;
+  margin: 50px 20px;
+}
+#content #main-content #about #text-about {
+  display: flex;
+}
+#content #main-content #about #text-about p:nth-child(2) {
+  margin: auto 5px;
+  color: rgb(0, 153, 255);
+}
+#content #main-content #about #discover {
+  background-color: black;
+  display: flex;
+  height: 30px;
+  width: fit-content;
+  align-items: center;
+  padding: 2px 10px;
+  border: 1px solid white;
+}
+#content #main-content #about #discover a {
+  color: white;
+}
+#content #main-content #chiffres {
+  position: relative;
+  padding: 5px 10px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 82, 136, 0.6)), url(../assets/planetes.jpg);
+  height: 300px;
+  margin: auto 20px 20px 20px;
+}
+#content #main-content #chiffres #all-data {
+  display: flex;
+  justify-content: space-between;
+}
+#content #main-content #chiffres #all-data .all-data {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#content #main-content #chiffres #all-data .details p:nth-child(1) {
+  color: rgb(0, 153, 255);
+  margin-left: 10px;
+}
+#content #main-content #chiffres #all-data .details p:nth-child(2) {
+  color: white;
+  margin-left: 10px;
+}
+#content #main-content #chiffres #next-mission {
+  position: absolute;
+  display: flex;
+  height: 25px;
+  width: 330px;
+  justify-content: center;
+  align-items: center;
+  bottom: 10px;
+  right: 10px;
+  border: 1px solid white;
+}
+#content #main-content #chiffres #next-mission a {
+  color: white;
+}
+#content #main-content #about #discover:hover, #content #main-content #chiffres #next-mission:hover {
+  border-color: rgb(0, 153, 255);
+}
+#content #main-content #about #discover:hover a, #content #main-content #chiffres #next-mission:hover a {
+  color: rgb(0, 153, 255);
+}
+#content #main-content #list {
+  width: 40%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 82, 136, 0.6)), url(../assets/planetes2.jpg);
+}
+#content #main-content #list #data-selector {
+  height: 25px;
+  background: black;
+  color: white;
+  border: 1px solid white;
+  border-radius: 0%;
+}
+#content #main-content #list input {
+  margin-top: 10px;
+  border: 1px solid white;
+  height: 25px;
+  background: black;
+  color: white;
+  width: 100%;
+}
+#content #main-content #list #list-planets {
+  margin-top: 10px;
+  height: 300px;
+  overflow-y: scroll;
+}
+#content #main-content #list .name-planet {
+  display: flex;
+  border-bottom: 1px solid white;
+  justify-content: space-between;
+}
+#content #main-content #list .name-planet div {
+  margin: 5px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+#content #main-content #list .name-planet:first-child {
+  background: #0099ff;
+}
+#content #main-content #list .name-planet:first-child:hover {
+  color: black;
+  border: 1px solid white;
+}
+#content #main-content #list .name-planet:nth-child(n+2):hover {
+  background: white;
+  color: #0099ff;
+}
+#content #main-content #list #count-results {
+  font-style: italic;
+  font-size: small;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+#content #main-content #infos, #content #main-content #list {
+  background-position: center;
+  margin: 20px;
+  border: 1px solid white;
+  padding: 10px;
+}
+#content #main-content #infos {
+  width: 60%;
+  min-height: 20px;
+  height: fit-content;
+  position: relative;
+  color: #0099ff;
+}
+#content #main-content #infos #empty {
+  font-size: small;
+  font-style: italic;
+}
+#content #main-content #infos #not-empty {
+  font-size: small;
+  display: none;
+}
+#content #main-content #infos #not-empty #population {
+  display: flex;
+}
+#content #main-content #infos #not-empty #population p:nth-child(2) {
+  margin-left: 5px;
+  color: white;
+}
+#content #main-content #infos #not-empty #display-details {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+#content #main-content #infos #not-empty #display-details .all-data {
+  display: flex;
+  align-items: center;
+  margin-left: 20px;
+}
+#content #main-content #infos #not-empty #display-details .all-data .detail {
+  margin-left: 20px;
+}
+#content #main-content #infos #not-empty #display-details .all-data .detail #diameter, #content #main-content #infos #not-empty #display-details .all-data .detail #gravity, #content #main-content #infos #not-empty #display-details .all-data .detail #climate, #content #main-content #infos #not-empty #display-details .all-data .detail #terrain {
+  color: white;
+}
+#content #main-content #infos #not-empty #more {
+  border: 1px solid white;
+  height: 30px;
+  width: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+#content #main-content #infos #not-empty #more a {
+  color: white;
+  text-decoration: none;
+}
+#content #main-content #infos #not-empty #more:hover {
+  background: white;
+  border: 1px solid #0099ff;
+}
+#content #main-content #infos #not-empty #more:hover a {
+  color: #0099ff;
+}
+#content #main-content.inline-row {
+  display: flex;
+  justify-content: space-around;
+}
+
+/*# sourceMappingURL=style.css.map */

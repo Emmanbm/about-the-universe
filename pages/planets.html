@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <script src="../scripts/script.js" defer></script>
+    <title>Planètes</title>
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="../assets/spacex-logo-svgrepo-com.svg" alt="">
+        </div>
+        <div id="pages">
+            <a href="./index.html">ACCUEIL</a>
+            <a href="">PROCHAINE MISSION</a>
+        </div>
+    </header>
+    <div id="content">
+        <nav id="data">
+            <div class="data" id="active">
+                <a href="./planets.html">
+                    <img src="../assets/planet-svgrepo-com.svg" alt="planets">
+                    PLANÈTES
+                </a>
+            </div>
+            <div class="data">
+                <a href="">
+                    <img src="../assets/rocket-launch-svgrepo-com.svg" alt="vehicles">
+                    VÉHICULES
+                </a>
+            </div>
+            <div class="data">
+                <a href="">
+                    <img src="../assets/astronaut-helmet-svgrepo-com.svg" alt="persons">
+                    PERSONNES
+                </a>
+            </div>
+        </nav>
+        <div id="main-content" class="inline-row">
+            <div id="list">
+                <div id="page-title"><h3>PLANÈTES</h3></div>
+                <div id="selector">
+                    <select name="data-selector" id="data-selector">
+                        <option value="population">Par population</option>
+                    </select>
+                </div>
+                <input type="search" placeholder="Faites votre recherche...">
+                <div id="list-planets">
+                    <div class="name-planet"><div>Nom</div><div>Terrain</div></div>
+                </div> 
+            </div>
+            <div id="infos">
+                <div id="empty">
+                </div>
+                <div id="not-empty">
+                    <h2 id="planet-name"></h2>
+                    <div id="population">
+                        <p>Population : </p><p id="print-population"></p>
+                    </div>
+                    <div id="display-details">
+                        <div class="all-data">
+                            <div class="svg"><img src="../assets/icons8-diametre-48.png" alt="Diamètre"></div>
+                            <div class="detail">
+                                <p>Diamètre</p>
+                                <p id="diameter"></p>
+                            </div>
+                        </div>
+                        <div class="all-data">
+                            <div class="svg"><img src="../assets/icons8-gravite-48.png" alt="Gravité"></div>
+                            <div class="detail">
+                                <p>Gravité</p>
+                                <p id="gravity"></p>
+                            </div>
+                        </div>
+                        <div class="all-data">
+                            <div class="svg"><img src="../assets/icons8-climate-48.png" alt="Climat"></div>
+                            <div class="detail">
+                                <p>Climat</p>
+                                <p id="climate"></p>
+                            </div>
+                        </div>
+                        <div class="all-data">
+                            <div class="svg"><img src="../assets/icons8-terrain-48.png" alt="Terrain"></div>
+                            <div class="detail">
+                                <p>Terrain</p>
+                                <p id="terrain"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="more"><a href="">EN SAVOIR PLUS...</a></div>
+                </div>
+            </div>
+        </div>
+</body>
+</html>
